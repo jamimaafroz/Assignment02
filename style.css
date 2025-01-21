@@ -128,7 +128,7 @@
     padding: 0px;
 }
 
-h3 {
+.ban-head {
     font-family: "Quicksand", serif;
     align-self: stretch;
     font-size: 4rem;
@@ -196,4 +196,165 @@ p {
         align-items: center;
         padding: 0px;
     }
+}
+
+@media screen and (min-width:577px) and (max-width:1400px) {
+
+    .banner,
+    .navbar {
+        width: auto;
+        height: auto;
+    }
+}
+
+/*Marquee text*/
+.marquee {
+    position: absolute;
+    display: none;
+    font-size: 20px;
+    font-weight: 500;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: "Quicksand", serif;
+    margin: 50px 0px;
+    padding: 20px;
+    text-overflow: inherit;
+    white-space: nowrap;
+    box-sizing: border-box;
+    animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/*Curriculum */
+.curriculum {
+    background-image: url(assets/bg.png);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: none;
+    font-family: "Quicksand", serif;
+    padding: 60px 0px 60px 0px;
+    gap: 80px;
+}
+
+.cont {
+    font-family: "Quicksand", serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.griding {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 0px 20px;
+    border-radius: 18px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    gap: 20px;
+}
+
+#health {
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+#education {
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+#discover {
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.texts {
+    font-size: 1rem;
+    color: rgb(17, 17, 17, 0.7);
+
+}
+
+.read {
+    font-size: 0.8rem;
+    font-family: "Quicksand", serif;
+}
+
+#r1 {
+    color: rgb(100, 200, 255);
+
+}
+
+#r2 {
+    color: rgb(240, 170, 0);
+
+}
+
+#r3 {
+    color: rgb(135, 0, 255);
+
+}
+
+/*icon*/
+
+.icon {
+    background-color: rgb(240, 170, 0);
+    padding: 0px 20px;
+    border: none;
+    border-radius: 18px;
+}
+
+/*responsive*/
+@media screen and (max-width:576px) {
+
+    .curriculum,
+    .griding {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: auto;
+        height: auto;
+        gap: 10px;
+    }
+
+    .icon {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:567.1px) and (max-width:1400px) {
+
+    .curriculum {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+footer {
+    background: rgb(1, 172, 253);
+    height: 519px;
+
 }
