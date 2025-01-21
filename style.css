@@ -1,0 +1,8 @@
+* {
+    margin: o;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+}
