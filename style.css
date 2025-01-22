@@ -81,7 +81,7 @@
 }
 
 /* Responsive Design */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 756px) {
 
     .navbar {
         width: auto;
@@ -175,7 +175,7 @@ p {
 }
 
 /* banner responsive design*/
-@media screen and (max-width:576px) {
+@media screen and (max-width:756px) {
 
     .banner {
         width: auto;
@@ -185,6 +185,10 @@ p {
         align-items: center;
         justify-content: center;
         padding: 0px;
+    }
+
+    .ban-head {
+        font-size: 2.5rem;
     }
 
     .content {
@@ -198,14 +202,6 @@ p {
     }
 }
 
-@media screen and (min-width:577px) and (max-width:1400px) {
-
-    .banner,
-    .navbar {
-        width: auto;
-        height: auto;
-    }
-}
 
 /*Marquee text*/
 .marquee {
@@ -321,14 +317,28 @@ p {
 /*icon*/
 
 .icon {
-    background-color: rgb(240, 170, 0);
-    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon button {
+    background-color: orange;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
     border: none;
-    border-radius: 18px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.np-slide button:hover {
+    background-color: rgba(255, 166, 0, 0.568);
 }
 
 /*responsive*/
-@media screen and (max-width:576px) {
+@media screen and (max-width:756px) {
 
     .curriculum,
     .griding {
@@ -345,16 +355,245 @@ p {
 
 }
 
-@media screen and (min-width:567.1px) and (max-width:1400px) {
 
-    .curriculum {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
+/*footer*/
 footer {
     background: rgb(1, 172, 253);
     height: 519px;
 
+}
+
+.foot {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    height: 100%;
+    padding: 80px;
+    margin: 0px 50px;
+}
+
+.kids-school {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    font-family: "Quicksand", serif;
+    color: #fff;
+}
+
+.logo-school {
+    background-color: #fff;
+    border-radius: 12px;
+    margin-right: 2px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    width: 250px;
+    height: 60px;
+}
+
+.foot-head {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.foot-text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    width: 400px;
+    height: 100px;
+    text-align: left;
+}
+
+.foot-cont {
+    margin: 50px;
+}
+
+
+.foot-list {
+    gap: 20px;
+    list-style: none;
+}
+
+.heading1 {
+    font-size: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+@media (max-width: 768px) {
+    .foot {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: flex-start;
+
+        padding: 10px;
+
+    }
+
+    .foot-cont {
+        margin: auto;
+    }
+
+    .kids-school {
+        align-items: flex-start;
+
+    }
+
+    .foot-text,
+    .foot-list {
+        max-width: 100%;
+        align-self: stretch;
+    }
+
+    .foot-text {
+        text-align: left;
+        width: auto;
+        max-width: 756px;
+        font-size: .8rem;
+    }
+
+    footer {
+        background: rgb(1, 172, 253);
+        width: auto;
+        height: auto;
+        margin: auto;
+
+    }
+}
+
+/*our stories section*/
+.cards {
+    background-image: url(assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Quicksand", serif;
+    padding: 60px 0px;
+    gap: 80px;
+    width: 100%;
+    height: 100%;
+}
+
+.card-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto
+}
+
+.img {
+    border-radius: 16px 16px 0px 0px;
+}
+
+.card-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    height: 600px;
+    padding: 0px;
+    background-color: #fff;
+    border-radius: 0px 0px 16px 16px;
+}
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    margin: 0px 20px;
+    border-radius: 18px;
+    gap: 20px;
+}
+
+#text2 {
+    font-size: 1rem;
+}
+
+.bx-hd {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(17, 17, 17);
+}
+
+.box-para {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.card-head {
+    font-family: "Quicksand", serif;
+    font-size: 3rem;
+}
+
+.card-box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    height: 300px;
+    padding: 0px;
+    background-color: #fff;
+    border-radius: 0px 0px 16px 16px;
+}
+
+.card-grid {
+    display: grid;
+    /* Enable grid layout */
+    grid-template-columns: repeat(2, 1fr);
+    /* Create 2 equal columns */
+    grid-template-rows: repeat(2, auto);
+    /* Create 2 rows with automatic height */
+    gap: 50px;
+    /* Space between boxes */
+    padding: 20px;
+    /* Padding around the grid */
+    justify-items: center;
+    /* Center items horizontally */
+    align-items: center;
+    width: 600px;
+    height: auto;
+
+}
+
+.last-button {
+    padding: 10px 40px;
+    border: none;
+    font-family: "Quicksand", serif;
+    font-size: 1.05rem;
+    border-radius: 12px;
+    background-color: rgb(17, 17, 17);
+    color: #fff;
+}
+
+@media screen and (max-width:756px) {
+    .card1 {
+        display: none;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: auto;
+        height: auto;
+        margin: 0px 10px;
+    }
 }
